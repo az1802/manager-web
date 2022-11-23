@@ -57,3 +57,5 @@ pnpm test:e2e # or `pnpm test:e2e:ci` for headless testing
 ```sh
 pnpm lint
 ```
+
+如何快速的切换数据源 的位置  从 组件  view  切换到store 全局控制  useHooks  通用逻辑 业务逻辑

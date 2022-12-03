@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Welcome from "@/views/Welcome.vue";
+import Welcome from "@/views/welcome/Welcome.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

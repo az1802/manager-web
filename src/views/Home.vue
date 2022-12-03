@@ -1,5 +1,5 @@
 <template>
-  <a-layout class="container h-screen">
+  <a-layout class="h-screen">
     <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
       <TreeMenu />
     </a-layout-sider>

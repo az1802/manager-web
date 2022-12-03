@@ -30,6 +30,8 @@ specifiers:
   unplugin-auto-import: ^0.11.4
   unplugin-vue-components: ^0.22.9
   vite: ^3.0.9
+  vite-plugin-optimize-persist: ^0.1.2
+  vite-plugin-package-config: ^0.1.1
   vitest: ^0.23.0
   vue: ^3.2.38
   vue-router: ^4.1.5
@@ -69,6 +71,8 @@ devDependencies:
   unplugin-auto-import: 0.11.4
   unplugin-vue-components: 0.22.9_vue@3.2.45
   vite: 3.2.4_@types+node@16.18.3
+  vite-plugin-optimize-persist: 0.1.2_qsusxfdmxhdo7qe32pp7ezbhrm
+  vite-plugin-package-config: 0.1.1_vite@3.2.4
   vitest: 0.23.4_jsdom@20.0.2
   vue-tsc: 0.40.13_typescript@4.7.4
 
@@ -2458,6 +2462,15 @@ packages:
     resolution: {integrity: sha512-twe20eF1OxVxp/ML/kq2p1uc6KvFK/+vs8WjEbeKmV2He22MKm7YF2ANIt+EOqhJ5L3K/SuuPhk0hWQDjOM23g==}
     dev: true
 
+  /fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs-extra/9.1.0:
     resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
     engines: {node: '>=10'}
@@ -4425,6 +4438,31 @@ packages:
       assert-plus: 1.0.0
       core-util-is: 1.0.2
       extsprintf: 1.3.0
+    dev: true
+
+  /vite-plugin-optimize-persist/0.1.2_qsusxfdmxhdo7qe32pp7ezbhrm:
+    resolution: {integrity: sha512-H/Ebn2kZO8PvwUF08SsT5K5xMJNCWKoGX71+e9/ER3yNj7GHiFjNQlvGg5ih/zEx09MZ9m7WCxOwmEKbeIVzww==}
+    peerDependencies:
+      vite: ^2.0.0
+      vite-plugin-package-config: ^0.1.0
+    dependencies:
+      debug: 4.3.4
+      fs-extra: 10.1.0
+      vite: 3.2.4_@types+node@16.18.3
+      vite-plugin-package-config: 0.1.1_vite@3.2.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vite-plugin-package-config/0.1.1_vite@3.2.4:
+    resolution: {integrity: sha512-w9B3I8ZnqoyhlbzimXjXNk85imrMZgvI9m8f6j3zonK5IVA5KXzpT+PZOHlDz8lqh1vqvoEI1uhy+ZDoLAiA/w==}
+    peerDependencies:
+      vite: ^2.0.0
+    dependencies:
+      debug: 4.3.4
+      vite: 3.2.4_@types+node@16.18.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /vite/3.2.4_@types+node@16.18.3:
